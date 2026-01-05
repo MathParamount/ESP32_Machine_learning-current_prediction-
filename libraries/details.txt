@@ -1,0 +1,13 @@
+This project was made using libraries below. The main purpose of use the following libraries was to be a simple project with less programming background knowledge and much more practical approach with hardware sending data to the computer and analyzing and making predictions with sensor's data.
+
+The libraries use:
+
+1. Pandas: It was use for extract serial data from Esp32 to computer. The USB port sends informations through port with timeout of 1 secound. 
+
+2. Numpy: was used in Regression scheme to filter the dataframe, extract  certain information of final data like help with root mean square of error.
+
+3. Matplotlib: 
+
+4. sklearn:
+
+
