@@ -140,9 +140,9 @@ pip install matplotlib;
 ``
 
 The code project was created in C++ and Pyhton. The C++ was used to create a fireware program with goal of read the serial ESP32 data. Which was calculated the offset and root mean square of current and voltage. In Python code I built 3 files for compile the project you should only call main.py file. If the serial connection is available it will run.
+
 ``
 python3 main.py
-
 ``
 
 # Practical Project
