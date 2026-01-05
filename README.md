@@ -117,6 +117,33 @@ The Perceptron consistently predicts values approximately 0.1 above the manual e
 
 ![manual_x_pred](https://github.com/user-attachments/assets/0a3cde76-f4d4-4519-ab18-a1d53935030e)
 
+# Compilation
+The project was used in python3 that is the newest version of python with less bugs and a better syntaxe and to install the Pyhton 3 you should verify the actual version of their computer.
+1. Ubuntu/Debian:
+``
+sudo apt update
+sudo apt install python3
+``
+
+2. Windows:
+You need to acess the link below and download the newest version of python:
+``
+ https://python.org/downloads
+``
+
+You need to install the libraries to be able to compile the program:
+``
+pip install pandas;
+pip install numpy;
+pip install sklearn;
+pip install matplotlib;
+``
+
+The code project was created in C++ and Pyhton. The C++ was used to create a fireware program with goal of read the serial ESP32 data. Which was calculated the offset and root mean square of current and voltage. In Python code I built 3 files for compile the project you should only call main.py file. If the serial connection is available it will run.
+``
+python3 main.py
+
+``
 
 # Practical Project
 
@@ -173,7 +200,8 @@ R = V / I = (12 - 0.5) / 2 A ≈ 5.75 Ω
 
 Series connection with an LED creates a paradox:
 * LED requires current
-* Motor requires voltag
+* Motor requires voltage
+
 
 # Conclusion
 
