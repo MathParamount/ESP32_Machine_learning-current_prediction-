@@ -2,6 +2,9 @@ Durante a etapa do código houve diversos erros corrigidos que são mostrados aq
 
 # Overview
 
+![lamp](https://github.com/user-attachments/assets/3021a97d-780f-4e55-bea5-e76ad04ade0c)
+
+
 This project focuses on serial data acquisition, data processing, machine learning regression, and visualization to predict electrical power consumption in a simple electronic system.
 Data is collected using an ESP32, processed in Python, and analyzed with machine learning models (Perceptron / MLPRegressor).
 
@@ -99,10 +102,21 @@ This module is responsible for graphical interpretation of the data.
 2. Average Power vs Time: Displays power dissipation behavior.
 3. Linear Regression Plot: Comparison between predicted power and real power over normalized time.
 
+The photos about the project is below:
+
+1) Current and power
+![current_ov_time_power](https://github.com/user-attachments/assets/0a5dddb7-527e-4c8e-a0eb-fbcf78424b53)
+
+2) Prediction
+![pred_x_res_linear](https://github.com/user-attachments/assets/161939ee-ef02-4f71-924d-c1c1ca7ec3e3)
+
 ## Residuals vs Prediction:
 
 Compares Perceptron predictions with a manually calculated prediction and manual prediction is based on the X variable and weights from the regression class.
 The Perceptron consistently predicts values approximately 0.1 above the manual estimation.
+
+![manual_x_pred](https://github.com/user-attachments/assets/0a3cde76-f4d4-4519-ab18-a1d53935030e)
+
 
 # Practical Project
 
@@ -115,6 +129,8 @@ The system is composed of:
 * Protoboard
 * DC fan (cooler)
 * Small lamp (LED)
+* capacitor of 10 nF
+* Resistor of 100 kΩ
 
 Cooler specifications:
 
@@ -124,7 +140,15 @@ Cooler specifications:
 
 Measured values are plausible, with average power around 1.6 W.
 
-## Model limitations:
+The frequency calcule is measured by formula below:
+
+``
+f = 1 / (2πRC) 
+``
+
+That gives us the frequency: ``` f ≈ 1591.5 Hz```
+
+# Model limitations:
 
 * High offset
 * Electromagnetic noise
