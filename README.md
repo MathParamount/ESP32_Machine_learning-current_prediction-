@@ -202,6 +202,15 @@ Series connection with an LED creates a paradox:
 * LED requires current
 * Motor requires voltage
 
+The electric circuit was tested in serial and parallel connections. The image below shows a serial connection:
+
+![fan](https://github.com/user-attachments/assets/3101d8fb-e709-4556-8d55-3630617c1e4b)
+
+This circuit above only the fan activated and the lamp after the fan remained turned off, due to the voltage drop and fan's conter-electromotive force.
+
+![parallel](https://github.com/user-attachments/assets/3d1f8cce-cc3d-4433-83dd-911504f994ae)
+
+The parallel circuit didin't work so well, due to the starting current that ringes on threfold fan current.
 
 # Conclusion
 
