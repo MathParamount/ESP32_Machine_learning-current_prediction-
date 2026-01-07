@@ -13,11 +13,16 @@ The system measures current and power in a circuit built on a protoboard using s
 
 # Project Structure
 
+The creater followed a logical order to organize the project files.
 ```
-├── read_firmware.py
-├── main.py
-├── regression.py
-├── visualization.py
+├── src 
+     └──read_firmware.py
+     └──main.py
+     └──regression.py
+     ├── fireware_esp32
+        └──fireware_esp32.ino
+├── libraries
+   └──details.txt
 └── README.md
 
 ```
