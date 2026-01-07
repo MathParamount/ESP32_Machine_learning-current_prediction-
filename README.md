@@ -221,6 +221,13 @@ This circuit above only the fan activated and the lamp after the fan remained tu
 ![parallel](https://github.com/user-attachments/assets/3d1f8cce-cc3d-4433-83dd-911504f994ae)
 
 The parallel circuit didin't work so well, due to the starting current that ringes on threfold fan current.
+Moreover, we realized that due to the starting current caused the prediction to fail, turning the system unstable and resulting in a wrong prediction, as show in image below.
+![pique_corrente](https://github.com/user-attachments/assets/d905b4ee-5274-4ea2-abe4-db27624ff734)
+
+It taught me that machine learning model works only to stable and linear systems. The image below shows a failed attempt to model a fan and lamp in a parallel connection.
+
+![predic_failed](https://github.com/user-attachments/assets/2e0c58ea-a7f4-42d7-9496-f91d3c1d400b)
+
 
 # Conclusion
 
