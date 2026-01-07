@@ -1,4 +1,5 @@
-Durante a etapa do código houve diversos erros corrigidos que são mostrados aqui:
+Durante a etapa do código houve diversos erros corrigidos que são mostrados aqui 
+(During the code step there were several issues wrapped up, which are showing right here):
 
 # Overview
 
@@ -21,7 +22,7 @@ The system measures current and power in a circuit built on a protoboard using s
 
 ```
 
-The image below shows a roadmap about the project structure:
+The image below shows a roadmap about the coding project structure:
 ![roadmap_pessoal_proj](https://github.com/user-attachments/assets/b40e25dd-0128-4fae-8b70-961156c6fecc)
 
 
