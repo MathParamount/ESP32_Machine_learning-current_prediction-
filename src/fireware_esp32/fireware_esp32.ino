@@ -1,9 +1,10 @@
 #include <Arduino.h>
+#include <WiFi.h>
 
 #define ADC_PIN 34
 #define ADC_Max 4095.0
 #define volt_ref 3.3
-#define n 1000          // number of iterations
+#define n 2000          // number of iterations
 #define current_ref 5       //reference current informed at datasheet
 
 #define Vrms_rede 127.0      // grid voltage
@@ -19,7 +20,12 @@ void setup()
    Serial.begin(115200);
    analogSetAttenuation(ADC_11db);
 
-float h = 2000;
+   //Shotting down the wifi
+   
+   WiFi.mode(WIFI_OFF);
+   Serial.println("Wifi disabled")
+
+float h = 3000;
 
    for (int i = 0; i < h; i++)
     {
@@ -27,7 +33,7 @@ float h = 2000;
 
         offset += adc;
 
-        delayMicroseconds(200);
+        delayMicroseconds(300);
     }
 
     offset = (offset/h) * (3.3/ADC_Max);
@@ -47,7 +53,7 @@ potency_estim = 0;
 
         acumulator += current_adc * current_adc;
 
-        delayMicroseconds(200);
+        delayMicroseconds(300);
     }    
 
     rms_current = sqrt(acumulator / n);
